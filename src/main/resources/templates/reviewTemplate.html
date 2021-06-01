@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${reviewModel.date}">A course</title>
+</head>
+<body>
+
+<header>
+    <h1 th:text="${reviewModel.title}"></h1>
+</header>
+
+<main>
+    <ul>
+        <p><a href="/reviews">Back To Reviews</a></p>
+
+    </ul>
+    <h2 th:text="${reviewModel.category}"></h2>
+    <h3 th:text="${reviewModel.date}"></h3>
+    <div>
+        <p th:text="${reviewModel.content}"></p>
+    </div>
+</main>
+
+<footer>
+    <small>&copy PARTH PATEL </small>
+</footer>
+
+</body>
+</html>
