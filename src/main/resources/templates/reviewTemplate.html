@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="css/style.css">
 <head>
-    <title th:text="${reviewModel.date}">A course</title>
+    <title th:text="${reviewModel.title}">A course</title>
 </head>
 <body>
 
@@ -17,7 +18,12 @@
     <h2 th:text="${reviewModel.category}"></h2>
     <h3 th:text="${reviewModel.date}"></h3>
     <div>
-        <p th:text="${reviewModel.content}"></p>
+        <img id="image" th:src="${reviewModel.img}">
+
+    </div>
+    <div class="box">
+    <p th:text="${reviewModel.content}"></p>
+
     </div>
 </main>
 

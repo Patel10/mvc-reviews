@@ -6,7 +6,7 @@ public class Review {
     private String title;
     private String date;
     private String category;
-    //private String img;
+    private String img;
     private String content;
 
     public long getId() {
@@ -28,12 +28,16 @@ public class Review {
         return content;
     }
 
-    public Review(long id, String title, String date, String category, String content) {
+    public String getImg() {
+        return img;
+    }
+
+    public Review(long id, String title, String date, String category,String img, String content) {
         this.id = id;
         this.title = title;
         this.date = date;
         this.category = category;
-        //this.img = img;
+        this.img = img;
         this.content = content;
     }
 }

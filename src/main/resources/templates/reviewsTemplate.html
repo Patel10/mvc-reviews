@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="css/style.css">
 <head>
     <meta charset="UTF-8">
     <title>PateLVIEW</title>
@@ -10,12 +11,19 @@
 </header>
 <main>
 
-    <ul>
-        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
-    </ul>
+
+    <div style="display: flex; flex-direction: row; margin:10px; gap:20px; fl  align-items: center; border: solid;
+  justify-content: center;">
+        <p th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></p>
+
+    </div>
+
+
 </main>
 
 
-
+<footer>
+    <small>&copy PARTH PATEL </small>
+</footer>
 </body>
 </html>
